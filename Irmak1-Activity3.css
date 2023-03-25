@@ -18,7 +18,7 @@
 }
 
 body > div:last-child {
-	width: 100%;  /* is this the last div or do you mean advertisement idk? */
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 }
@@ -29,15 +29,6 @@ body > div:last-child {
 	margin-top: 10px;
 	margin-left: 200px;
 }
-
-/* .logo::after {
-	content: "Bilgisayar Mühendisliği Bölümü";
-	font-size: larger;
-	font-weight: bold;
-	color: blue;
-	display: flex;
-    justify-content: left;
-} */
 
 .title {
 	position: absolute;
