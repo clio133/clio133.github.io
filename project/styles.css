@@ -2,8 +2,8 @@
 :root {
     --main-bg-color:#3B3486;
     --main-text-color: #FCFDF2;
+	--main-link-color: #FFE9B1;
 }
-
 
 /* Global styles */
 body {
@@ -26,7 +26,7 @@ header {
 	display: inline-block;
 }
 
-.logo img {
+#logo-img {
 	vertical-align: middle;
     height: 40px;
     margin-top: 5px;
@@ -39,45 +39,45 @@ header {
 	font-weight: bold;
 }
 
-
-nav ul {
+.navbar ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
 }
 
-nav ul li {
+.navbar ul li {
 	margin-right: 20px;
 }
 
-nav ul li:last-child {
+.navbar ul li:last-child {
 	margin-right: 0;
 }
 
-nav ul li a {
+.navlink {
 	color: var(--main-text-color);
 	text-decoration: none;
 }
 
-nav ul li a:hover {
-	color: #FFE9B1;
+.navlink:hover {
+	color: var(--main-link-color);
 }
 
 #current {
-    color: #FFE9B1;
+    color: var(--main-link-color);
 }
 
 /* Main styles */
 main {
-	max-width: 2000px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
 h1 {
 	font-size: 36px;
-	margin-bottom: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 p {
@@ -107,37 +107,11 @@ footer {
 	margin: 0 auto;
 }
 
-.index h1 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 30px;
-    text-align: center; 
-}
-
-.index p {
-	font-size: 18px;
-	line-height: 1.5;
-	margin-bottom: 20px;
-}
-
 /* About us page */
 .about-us {
 	padding: 50px;
 	max-width: 800px;
 	margin: 0 auto;
-}
-
-.about-us h2 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 30px;
-    text-align: center; 
-}
-
-.about-us p {
-	font-size: 18px;
-	line-height: 1.5;
-	margin-bottom: 20px;
 }
 
 /* Gallery page */
@@ -148,26 +122,20 @@ footer {
 	text-align: center;
 }
 
-.gallery h2 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 30px;
-}
-
 .row {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
 }
 
-.row img {
+.gallery-photo {
 	width: 30%;
 	margin-right: 2%;
 	margin-bottom: 2%;
 	object-fit: cover;
 }
 
-.row img:last-child {
+.gallery-photo:last-child {
 	margin-right: 0;
 }
 
@@ -176,13 +144,6 @@ footer {
 	padding: 50px;
 	max-width: 1000px;
 	margin: 0 auto;
-}
-
-.join-us h2 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 30px;
-    text-align: center;
 }
 
 .join-us p {
