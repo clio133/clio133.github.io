@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    padding-right: 10px;
+}
+
+input[type="submit"] {
+    grid-column: span 2;
+    width: 100px;
+    height: 30px;
+}
+
+input.touched:invalid {
+    border: 2px solid red;
+}
