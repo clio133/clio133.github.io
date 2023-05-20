@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pawty Time - Registration</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="static/css/styles.css">
+	<script src="static/js/jquery.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
+    <script src="static/js/widget.js"></script>
+	<script src="static/js/script.js"></script>
+</head>
+<body>
+
+	<!-- Logo and navbar, same for all pages -->
+	<header>
+
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" id="logo-img" alt="Pawty Time"><p class="logo-text">Pawty Time</p></a>
+		</div>
+
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html" class="navlink">Home</a></li>
+				<li><a href="about.html" class="navlink">About Us</a></li>
+				<li><a href="gallery.html" class="navlink">Photo Gallery</a></li>
+				<li><a href="join.html" class="navlink">Join Us</a></li>
+				<li><a href="registration.html" class="navlink">Registration</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	  <main>
+		<section class="registration">
+		  <h1>Online Registration</h2>
+		  <p>
+			Pre-register with our pet community by filling out the form below. By filling out the form, you approve our
+			<a href="#" id="user-agreement-link">user agreement</a>.
+		  </p>
+		  <!-- hidden user agreement -->
+		  <div id="dialog-user-agreement" title="User Agreement">
+			<p>
+			  By registering with Pawty Time, you acknowledge that you have read, understood, and agree to the terms and conditions outlined in this agreement. Please read this agreement carefully before proceeding with the registration process.
+			</p>
+			<h5>1. Membership</h5>
+			<p>
+			  1.1. To become a member of Pawty Time, you must provide accurate and complete information during the registration process. You are responsible for maintaining the confidentiality of your account information.
+			</p>
+			<h5>2. Pet Behavior and Safety</h5>
+			<p>
+			  2.1. While participating in any pet activities organized through Pawty Time, you are responsible for the behavior and safety of your pets. You agree to abide by all applicable laws and regulations regarding pet ownership, including leash laws and vaccination requirements.
+			</p>
+			<h5>3. Liability</h5>
+			<p>
+			  3.1. Pawty Time and its administrators, organizers, and members shall not be held liable for any injuries, damages, or losses that may occur during pet activities. Participation in pet activities is at your own risk.
+			</p>
+			<h5>4. Privacy</h5>
+			<p>
+			  4.1. Pawty Time respects your privacy and will handle your personal information in accordance with our Privacy Policy. By registering, you consent to the collection, use, and disclosure of your personal information as described in the Privacy Policy.
+			</p>
+			<p>
+			  By checking the box below, you confirm that you have read, understood, and agree to the terms and conditions outlined in this agreement.
+			</p>
+		  </div>
+
+		  <form id="registration-form" method="POST">
+			<div class="form-group">
+			  <label for="name">Name:</label>
+			  <input type="text" id="name" name="name" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>	
+	  
+			<div class="form-group">
+			  <label for="num-cats">Number of Cats:</label>
+			  <input type="number" id="num-cats" name="num-cats" min="1" max="10" required>
+			</div>
+	  
+			<div class="form-group">
+			  <label for="registration-date">Visit Date:</label>
+			  <input type="text" id="registration-date" name="registration-date"  title="Select the date you will visit us to complete your registration." required>
+			</div>		
+	  
+			<button type="submit">Submit</button>
+		</form>
+		<!-- hidden message -->
+		<p id="message" class="hidden">Your pre-registration has been successfully made! You will receive an email with detailed information shortly.</p>
+		</section>
+	  </main>
+	  
+
+	<!-- Footer info, same for all pages -->
+	<footer>
+		<p>&copy; 2023 Pawty Time. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
