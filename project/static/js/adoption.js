@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Fetch pet data using AJAX
   $.ajax({
-    url: 'pets.json',
+    url: 'project/pets.json',
     dataType: 'json',
     success: function(data) {
       displayPets(data);
